@@ -14,7 +14,7 @@ def hello_world():
     else:
         myage = request.form['age']
         mygender = request.form['gender']
-        model = load('app/food-recommender.joblib')
+        model = load('app/music_type-recommender.joblib')
         np_arr = np.array([myage, mygender])
         predictions = model.predict([np_arr])  
         predictions_to_str = str(predictions)
