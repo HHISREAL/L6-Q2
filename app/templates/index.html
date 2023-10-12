@@ -1,17 +1,35 @@
+<center><h2>Machine Learning - Guess The Type Of Your Favourite Music</h2></center>
+<p><center><img src="https://web.edu.hku.hk/assets/shared/img/page-logo.svg" alt="HKU-EDU" /></center></p>
 
 <center>
   <form method="POST">
+
+
+    <table border="2" style="background-color: rgb(83, 206, 151);">
+      <tr>
+          <td>Age:</td>
+          <td><input type="number" name="age" min="1" max="99"></td>
+      </tr>
+      <tr>
+          <td>Gender: (1 for male, 0 for female)</td>
+          <td><input type="number" name="gender" min="0" max="1"></td>
+      </tr>
+      <tr>
+          <td>Degree: (1 for degree, 2 for diploma, 3 for phd, 4 for master)</td>
+          <td><input type="number" name="degree" min="1" max="4"></td>
+      </tr>
+      <tr>
+        <td>Press the button to submit:</td>
+        <td><input type="submit"></td>
+      </tr>
+      <tr>
+        <tr><td align="center" style="background-color: rgb(171, 171, 171);" colspan="2">The result</td></tr>
+      </tr>
+      <tr><td colspan="2" align="center" style="background-color: rgb(239, 239, 239);"><label>{{ href2 }} </label></td></tr>
      
-      <label>Insert your age (1-99): </label>
-      <input type="number" name="age" min="1" max="99">
-      <br />
-      <label>Insert your gender (0 for male, 1 for female): </label>
-      <input type="number" name="gender" min="0" max="1">
-      <label>Insert your degree (1 for degree, 2 for diploma, 3 for phd, 4 for master): </label>
-      <input type="number" name="degree" min="1" max="4">
-      <br />
-      <input type="submit">
-      <br />
-      <label>{{ href2 }} </label>
+
+  </table>
+
   </form>
 </center>
+
