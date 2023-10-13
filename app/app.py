@@ -16,7 +16,7 @@ def hello_world():
         mygender = request.form['gender']
         mydegree = request.form['degree']
         model = load('app/music_type-recommender.joblib')
-        np_arr = np.array([myage, mygender])
+        np_arr = np.array([myage, mygender, mydegree])
         predictions = model.predict([np_arr])  
         predictions_to_str = str(predictions)
         #return predictions_to_str
